@@ -718,3 +718,38 @@ section {padding:3rem 1rem;}
 
 #feature-section .section-container .card-box .btn:hover {background-position:left bottom;
                                                           color:var(--white);}
+
+/******************
+ # Testimonial
+******************/
+#testimonial-section {background-color:var(--gray-color8);}
+
+#testimonial-section .section-container {display:grid;
+                                         gap:3.2rem;
+                                         grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));}
+
+#testimonial-section .section-container .card-box {border-radius:0.4rem;
+                                                   background-color:var(--white);
+                                                   box-shadow:var(--box-shadow2);
+                                                   padding:1rem 2rem;
+                                                   position:relative;}
+
+#testimonial-section .section-container .card-box img {position:absolute;
+                                                       top:-2rem;
+                                                       right:-0.8rem;
+                                                       width:7rem;
+                                                       height:7rem;
+                                                       border-radius:50%;
+                                                       border:0.6rem solid var(--gray-color8);}
+
+#testimonial-section .section-container .card-box h3 {margin:0 0 1rem;
+                                                      font-weight:bold;}
+
+#testimonial-section .section-container .card-box .jop {display:block;
+                                                        margin:0.5rem 0;
+                                                        font-size:1.2rem;
+                                                        color:var(--gray-color4);}
+
+#testimonial-section .section-container .card-box .rate {margin:0.5rem 0;}
+
+#testimonial-section .section-container .card-box .rate .filled {color:var(--light-orange10);}
