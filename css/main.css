@@ -624,3 +624,97 @@ section {padding:3rem 1rem;}
                             width:200%;
                             height:200%;}
 }
+
+/******************
+ # Feature
+******************/
+#feature-section {position:relative;}
+
+#feature-section .section-container {display:grid;
+                                     gap:2rem;
+                                     grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));}
+
+#feature-section .section-container .card-box {text-align:center;
+                                               padding:0;
+                                               background-color:var(--white);
+                                               border:1px solid #ccc;}
+
+#feature-section .section-container .card-box .image-holder {position:relative;
+                                                             width:100%;
+                                                             height:60%;
+                                                             overflow:hidden;}
+
+#feature-section .section-container .card-box .image-holder::before {content:"";
+                                                                     position:absolute;
+                                                                     top:0;
+                                                                     left:0;
+                                                                     width:100%;
+                                                                     height:100%;
+                                                                     opacity:0.3;}
+
+#feature-section .section-container .card-box .image-holder::after {content:"";
+                                                                    position:absolute;
+                                                                    bottom:0;
+                                                                    right:0;
+                                                                    border-style:solid;
+                                                                    border-width:0px 0px 100px 500px;
+                                                                    border-color:transparent transparent white transparent;
+                                                                    transition:var(--main-transition);}
+
+#feature-section .section-container .card-box .image-holder img {width:100%;
+                                                                 height:100%;
+                                                                 object-fit:cover;}
+
+#feature-section .section-container .card-box:hover .image-holder::after {border-width:170px 500px 170px 0;}
+
+#feature-section .section-container .card-box h2 {font-weight:bold;
+                                                  margin:auto;
+                                                  width:fit-content;
+                                                  position:relative;}
+
+#feature-section .section-container .card-box h2::after {content:"";
+                                                         position:absolute;
+                                                         bottom:-0.5rem;
+                                                         left:0.2rem;
+                                                         height:0.2rem;
+                                                         width:calc(100% - 0.5rem);}
+
+#feature-section .section-container .card-box p {margin-bottom:1rem;
+                                                 padding:1rem;}
+
+#feature-section .section-container .card-box .btn {font-size:1.2rem;
+                                                    font-weight:bold;
+                                                    padding:0.3rem 1.2rem;
+                                                    border-radius:0.4rem;
+                                                    margin-bottom: 1rem;
+                                                    border:0.2rem solid var(--primary-color);
+                                                    transition:var(--main-transition);}
+
+
+#feature-section .section-container .quality .image-holder::before {background-color:var(--primary-color);}
+#feature-section .section-container .quality h2::after {background-color:var(--primary-color);}
+#feature-section .section-container .quality .btn {color:var(--primary-color);
+                                                   border-color:var(--primary-color);
+                                                   background:linear-gradient(to right, var(--primary-color) 50%, white 50%);
+                                                   background-size:200% 100%;
+                                                   background-position:right bottom;}
+
+#feature-section .section-container .time .image-holder::before {background-color:var(--primary-color9);}
+#feature-section .section-container .time h2::after {background-color:var(--primary-color9);}
+#feature-section .section-container .time .btn {color:var(--primary-color9);
+                                                border-color:var(--primary-color9);
+                                                background:linear-gradient(to right, var(--primary-color9) 50%, white 50%);
+                                                background-size:200% 100%;
+                                                background-position:right bottom;}
+
+
+#feature-section .section-container .passion .image-holder::before {background-color:var(--primary-color15);}
+#feature-section .section-container .passion h2::after {background-color:var(--primary-color15);}
+#feature-section .section-container .passion .btn {color:var(--primary-color15);
+                                                   border-color:var(--primary-color15);
+                                                   background:linear-gradient(to right, var(--primary-color15) 50%, white 50%);
+                                                   background-size:200% 100%;
+                                                   background-position:right bottom;}
+
+#feature-section .section-container .card-box .btn:hover {background-position:left bottom;
+                                                          color:var(--white);}
