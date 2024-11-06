@@ -753,3 +753,69 @@ section {padding:3rem 1rem;}
 #testimonial-section .section-container .card-box .rate {margin:0.5rem 0;}
 
 #testimonial-section .section-container .card-box .rate .filled {color:var(--light-orange10);}
+
+/******************
+ # Team members
+******************/
+#team-members-section {position:relative;}
+
+#team-members-section .section-container {display:grid;
+                                          gap:3.2rem;
+                                          grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));}
+
+#team-members-section .section-container .card-box {position:relative;}
+
+#team-members-section .section-container .card-box::before,
+#team-members-section .section-container .card-box::after {content:"";
+                                                           position:absolute;
+                                                           top:0;
+                                                           right:0;
+                                                           height:100%;
+                                                           border-radius:0.3rem;
+                                                           transition:var(--main-transition);}
+
+#team-members-section .section-container .card-box::before {width:calc(100% - 4rem);
+                                                            background-color:var(--gray-color8);
+                                                            z-index:-2;}
+
+#team-members-section .section-container .card-box::after {width:0;
+                                                           background-color:var(--gray-color7);
+                                                           z-index:-1;}
+
+#team-members-section .section-container .card-box:hover::after {width:calc(100% - 4rem);}
+
+#team-members-section .section-container .card-box .data {padding-top:4rem;}
+
+#team-members-section .section-container .card-box .data img {width:calc(100% - 4rem);
+                                                              height:15rem;object-fit:cover;
+                                                              border-radius:0.3rem;
+                                                              transition:var(--main-transition);}
+
+#team-members-section .section-container .card-box:hover img {filter:grayscale(100%);}
+
+#team-members-section .section-container .card-box .social {width:4rem;}
+
+#team-members-section .section-container .card-box .social a {width:4rem;
+                                                              height:2rem;
+                                                              margin:0.5rem 0;
+                                                              display:flex;
+                                                              justify-content:center;
+                                                              align-items:center;}
+
+#team-members-section .section-container .card-box .social a #social-i {font-size:1.3rem;
+                                                                        color:var(--gray-color4);
+                                                                        transition:var(--main-transition);}
+
+#team-members-section .section-container .card-box .social a #social-i:hover {color:var(--main-color);}
+
+#team-members-section .section-container .card-box .info {padding:0.5rem 0 0.5rem 8rem;}
+
+#team-members-section .section-container .card-box .info h3 {font-weight:bold;
+                                                             margin-top:1rem;
+                                                             color:var(--main-color);
+                                                             transition:var(--main-transition);}
+
+#team-members-section .section-container .card-box:hover h3 {color:var(--gray-color3);}
+
+#team-members-section .section-container .card-box .info p {font-size:1.2rem;
+                                                            color:var(--gray-color2);}
