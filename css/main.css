@@ -483,3 +483,65 @@ section {padding:3rem 1rem;}
                            .header .container .mega-menu .links:first-of-type li:last-child {border-bottom:1px solid #e9e6e6}
 
 }
+
+/******************
+ # Home
+******************/
+#banner-section {position:relative;}
+
+#banner-section::before {content:"";
+                         position:absolute;
+                         top:-40px;
+                         left:0;
+                         width:100%;
+                         height:100%;
+                         background:#ececec;
+                         z-index:-1;
+                         transform:skewY(-6deg);
+                         transform-origin:top left;}
+
+#banner-section .section-container {min-height:calc(100vh - 72px);
+                                    padding-bottom:11rem;}
+
+#banner-section .section-container .text {flex:1 1 30rem;
+                                          padding-left:2rem;}
+
+@media (max-width:991px){ #banner-section .section-container .text {text-align:center;} }
+
+#banner-section .section-container .text h1 {font-size:3rem;
+                                             font-weight:bold;
+                                             margin:0;}
+
+@media (max-width:768px){ #banner-section .section-container .text h1 {font-size:2rem;} }
+
+#banner-section .section-container .text p {font-size:1.4rem;
+                                            color:#666;}
+
+@media (max-width:991px){ #banner-section .section-container .text p {margin:10px auto;} }
+
+#banner-section .image {flex:1 1 30rem;}
+
+#banner-section .image img {width:60%;
+                            position:relative;
+                            animation:up-and-down 5s linear infinite;}
+
+#banner-section .go-down {position:absolute;
+                          left:50%;
+                          bottom:30px;
+                          transform:translateX(-50%);
+                          color:var(--main-color);
+                          transition:all 0.3s linear;}
+
+#banner-section .go-down .fa-angle-double-down {animation:bouncing 1.5s infinite;}
+
+/* Start Animation */
+@keyframes up-and-down {
+      0%, 100% {top:0;}
+      50% {top:-50px;}
+}
+
+@keyframes bouncing {
+      0%, 10%, 20%, 50%, 80%, 100% {transform:translateY(0);}
+      40%, 60% {transform:translateY(-15px);}
+}
+/* End Animation */
