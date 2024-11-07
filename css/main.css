@@ -984,3 +984,103 @@ section {padding:3rem 1rem;}
 
       #work-steps-section .section-container .cards .card-box .text {align-items:center;}
 }
+
+/******************
+ # Events
+*******************/
+#events-section {position:relative;}
+
+#events-section .section-container .info .time {gap:2rem;
+                                                margin-top:3rem;}
+
+#events-section .section-container .info .time .unit {width:6.2rem;
+                                                      border:2px solid var(--gray-color7);
+                                                      border-radius:0.3rem;
+                                                      text-align:center;
+                                                      transition:var(--main-transition);}
+
+#events-section .section-container .info .time .unit span {display:block;
+                                                           color:var(--gray-color4);
+                                                           transition:var(--main-transition);}
+
+#events-section .section-container .info .time .unit span:first-child {font-size:1.7rem;
+                                                                       font-weight:bold;
+                                                                       padding:0.8rem;
+                                                                       color:var(--main-color);}
+
+#events-section .section-container .info .time .unit span:last-child {font-size:1.2rem;
+                                                                      padding:0.2rem 0.8rem;
+                                                                      border-top:1px solid var(--gray-color9);}
+
+#events-section .section-container .info .time .unit:hover,
+#events-section .section-container .info .time .unit:hover span:last-child {border-color:var(--main-color);}
+
+#events-section .section-container .info .title {font-size:2rem;
+                                                 margin:2rem 0;
+                                                 text-align:center;
+                                                 font-weight:bold;}
+
+#events-section .section-container .info .description {font-size:1.2rem;
+                                                       color:var(--gray-color6);}
+
+#events-section .section-container .subscribe {margin-top:2rem;}
+
+#events-section .section-container .subscribe form {display:flex;
+                                                    flex-direction:row;
+                                                    justify-content:space-between;
+                                                    align-items:center;
+                                                    width:50%;
+                                                    margin:2rem auto;
+                                                    padding:2rem 3rem;
+                                                    border-radius:2rem;
+                                                    gap:2rem;
+                                                    background-color:var(--gray-color8);}
+
+#events-section .section-container .subscribe form input[type="email"] {width:80%;
+                                                                        padding:1rem;
+                                                                        border:none;
+                                                                        border-radius:3rem;
+                                                                        font-size:1.1rem;
+                                                                        caret-color:var(--main-color);}
+
+#events-section .section-container .subscribe form input[type="email"]:focus {outline:none;}
+
+#events-section .section-container .subscribe form input[type="email"]::placeholder {transition:var(--main-transition);}
+
+#events-section .section-container .subscribe form input[type="email"]:focus::placeholder {opacity:0;}
+
+#events-section .section-container .subscribe form input[type="submit"] {font-size:1.2rem;
+                                                                         color:var(--white);
+                                                                         background-color:var(--main-color);
+                                                                         border-radius:2rem;
+                                                                         padding:1rem 1.3rem;
+                                                                         font-weight:bold;
+                                                                         border:none;
+                                                                         cursor:pointer;
+                                                                         transition:var(--main-transition);}
+
+#events-section .section-container .subscribe form input[type="submit"]:hover {background-color:var(--light-blue);}
+
+
+@media (max-width:1000px) { #events-section .section-container .subscribe form {width:90%;} }
+
+@media (max-width:768px) {
+      #events-section .section-container .subscribe form {width:96%;
+                                                          padding:1rem 2rem;}
+}
+
+@media (min-width:500px) and (max-width:768px) {#events-section .section-container .subscribe form {gap:1rem;} 
+                                                #events-section .section-container .subscribe form input[type="email"] {width:90%;} }
+
+@media (max-width:500px) {
+      #events-section .section-container .subscribe form {width:100%;
+                                                          flex-direction:column;
+                                                          padding:1rem;
+                                                          gap:1rem;
+                                                          border-radius:0.5rem;}
+
+      #events-section .section-container .subscribe form input[type="email"] {width:100%;
+                                                                              border-radius:0.5rem;}
+
+      #events-section .section-container .subscribe form input[type="submit"] {width:100%;}
+}
