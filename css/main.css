@@ -1084,3 +1084,103 @@ section {padding:3rem 1rem;}
 
       #events-section .section-container .subscribe form input[type="submit"] {width:100%;}
 }
+
+/******************
+ # Pricing plans
+*******************/
+#pricing-section .section-container {display:grid;
+                                     gap:3.2rem;
+                                     grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));}
+
+#pricing-section .section-container .card-box {position:relative;
+                                               box-shadow:var(--box-shadow2);
+                                               background-color:var(--white);
+                                               text-align:center;
+                                               z-index:1;
+                                               transition:var(--main-transition);}
+
+#pricing-section .section-container .card-box::before,
+#pricing-section .section-container .card-box::after {content:"";
+                                                      position:absolute;
+                                                      width:0;
+                                                      height:2.5rem;
+                                                      background-color:var(--gray-color8);
+                                                      z-index:-1;
+                                                      transition:var(--main-transition);}
+
+#pricing-section .section-container .card-box::before {left:0;
+                                                       top:0;}
+
+#pricing-section .section-container .card-box::after {right:0;
+                                                      bottom:0;}
+
+#pricing-section .section-container .card-box:hover::before,
+#pricing-section .section-container .card-box:hover::after {width:100%;}
+
+#pricing-section .section-container .card-box .title {font-weight:bold;
+                                                      margin:3rem 0 2rem;}
+
+#pricing-section .section-container .card-box.popular .label {position:absolute;
+                                                              right:1rem;
+                                                              writing-mode:vertical-rl;
+                                                              font-size:1.2rem;
+                                                              font-weight:bold;
+                                                              padding:1rem 0.4rem 3rem 0.4rem;
+                                                              color:var(--white);
+                                                              background-color:var(--main-color);}
+
+#pricing-section .section-container .card-box.popular .label::before {content:"";
+                                                                      position:absolute;
+                                                                      bottom:0;
+                                                                      right:0;
+                                                                      background-color:var(--main-color);
+                                                                      border-style:solid;
+                                                                      border-width:1.2rem;
+                                                                      border-color:transparent transparent white transparent;}
+
+#pricing-section .section-container .card-box img {width:7rem;
+                                                   margin-bottom:2rem;}
+
+#pricing-section .section-container .card-box .price {margin-bottom:2rem;}
+
+#pricing-section .section-container .card-box .price span:first-child {display:block;
+                                                                       font-size:2.5rem;
+                                                                       font-weight:bold;
+                                                                       margin-bottom:0.4rem;
+                                                                       color:var(--light-blue2);}
+
+#pricing-section .section-container .card-box .price span:last-child {font-size:1.3rem;
+                                                                      font-weight:bold;
+                                                                      color:var(--gray-color4);}
+
+#pricing-section .section-container .card-box ul {text-align:left;
+                                                  padding-left:0;}
+
+#pricing-section .section-container .card-box ul li {font-size:1.1rem;
+                                                     font-weight:bold;
+                                                     color:var(--gray-color3);
+                                                     padding:0.7rem 1rem 0.7rem 1.2rem;
+                                                     border-top:0.2rem solid var(--gray-color8);}
+
+#pricing-section .section-container .card-box ul li::before {font-family:"Font Awesome 5 Free";
+                                                             content:\f00c;
+                                                             margin-right:1rem;
+                                                             font-weight:bold;
+                                                             color:var(--main-color);}
+
+#pricing-section .section-container .card-box .btn {display:block;
+                                                    width:fit-content;
+                                                    color:var(--light-blue2);
+                                                    margin:1rem auto 3rem;
+                                                    font-size:1.2rem;
+                                                    font-weight:bold;
+                                                    padding:0.7rem 1.5rem;
+                                                    border-radius:0.3rem;
+                                                    border:1.9px solid var(--light-blue2);
+                                                    transition:var(--main-transition);}
+
+#pricing-section .section-container .card-box .btn:hover {color:var(--white);
+                                                          border-color:var(--light-blue);
+                                                          background-color:var(--light-blue);}
+
+@media (min-width:1200px) { #pricing-section .section-container .card-box.popular {top:-1rem;} }
