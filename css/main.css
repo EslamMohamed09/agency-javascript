@@ -1269,3 +1269,84 @@ section {padding:3rem 1rem;}
 
 #statistics-section .section-container .card-box span.name {font-size:1.1rem;
                                                             font-weight:bold;}
+
+/******************
+ # discount
+*******************/
+#discount-section {min-height:100vh;
+                   padding:0;}
+
+#discount-section .image {background-image:url(../img/game2.jpg);
+                          background-position:center;
+                          background-size:cover;
+                          color:var(--white);
+                          min-height:100vh;
+                          padding:0;
+                          position:relative;
+                          z-index:1;
+                          animation:change-background 10s linear infinite;}
+
+#discount-section .image::before {content:"";
+                                  position:absolute;
+                                  top:0;
+                                  left:0;
+                                  right:0;
+                                  width:100%;
+                                  height:100%;
+                                  background-color:var(--light-blue);
+                                  opacity:0.9;
+                                  z-index:-1;}
+
+#discount-section .image .content h2 {margin-top:3rem;}
+
+#discount-section .content {text-align:center;
+                            padding:0 2rem;}
+
+#discount-section .content h2 {font-size:2.4rem;
+                               font-weight:bold;
+                               margin-bottom:1.6rem;}
+
+#discount-section .content p {font-size:1.1rem;
+                              max-width:50rem;
+                              color:var(--gray-color8);}
+
+#discount-section .form-block .content {width:100%;}
+
+#discount-section .form-block .content h2 {margin-bottom:3rem;}
+
+#discount-section .form-block .content form .input {display:block;
+                                                    width:100%;
+                                                    margin-bottom:2rem;
+                                                    padding:1rem;
+                                                    border:none;
+                                                    border-bottom:1px solid var(--gray-color8);
+                                                    background-color:var(--gray-color9);}
+
+#discount-section .form-block .content form textarea {height:20rem;
+                                                      resize:none;}
+
+#discount-section .form-block .content form .input:focus {outline:none;}
+
+#discount-section .form-block .content form .input::placeholder {transition:var(--main-transition);}
+
+#discount-section .form-block .content form .input:focus::placeholder {opacity:0;}
+
+#discount-section .form-block .content form [type="submit"] {display:block;
+                                                             width:100%;
+                                                             padding:1rem;
+                                                             background-color:var(--light-blue);
+                                                             color:var(--white);
+                                                             font-weight:bold;
+                                                             font-size:1.2rem;
+                                                             border:none;
+                                                             cursor:pointer;
+                                                             transition:var(--main-transition);}
+
+#discount-section .form-block .content form [type="submit"]:hover {background-color:var(--light-blue2);}
+
+@keyframes change-background {
+      0%,
+      100% {background-image:url(../img/game2.jpg);}
+
+      50%  {background-image:url(../img/game3.jpg);}
+}
