@@ -819,3 +819,74 @@ section {padding:3rem 1rem;}
 
 #team-members-section .section-container .card-box .info p {font-size:1.2rem;
                                                             color:var(--gray-color2);}
+
+/******************
+ # services
+*******************/
+#services-section .section-container {display:grid;
+                                      gap:3.2rem;
+                                      grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));}
+
+#services-section .section-container .card-box {text-align:center;
+                                                background-color:var(--white);
+                                                box-shadow:var(--box-shadow2);
+                                                counter-increment:services;
+                                                transition:var(--main-transition);
+                                                position:relative;}
+
+#services-section .section-container .card-box::before {content:"";
+                                                        position:absolute;
+                                                        top:0;
+                                                        left:50%;
+                                                        transform:translateX(-50%);
+                                                        width:0;
+                                                        height:0.1rem;
+                                                        transition:var(--main-transition);
+                                                        background-color:var(--main-color);}
+
+#services-section .section-container .card-box:hover {transform:translateY(-0.3rem);}
+
+#services-section .section-container .card-box:hover::before {width:100%;}
+
+#services-section .section-container .card-box #icon {margin:1.5rem auto;
+                                                      font-size:2.6rem;
+                                                      color:var(--gray-color7);}
+
+#services-section .section-container .card-box h3 {font-size:1.6rem;
+                                                   font-weight:bold;
+                                                   margin:0.4rem 0 2rem;
+                                                   color:var(--main-color);}
+
+#services-section .section-container .card-box .info {text-align:right;
+                                                      padding:0.5rem 1rem;
+                                                      background-color:var(--gray-color9);
+                                                      position:relative;}
+
+#services-section .section-container .card-box .info::before {content:"0" counter(services);
+                                                              position:absolute;
+                                                              top:0;
+                                                              left:0;
+                                                              width:5.5rem;
+                                                              height:calc(100% - 0.1px);
+                                                              font-size:2rem;
+                                                              font-weight:bold;
+                                                              padding:0 2rem 0 1rem;
+                                                              display:flex;
+                                                              flex-direction:row;
+                                                              justify-content:center;
+                                                              align-items:center;
+                                                              color:var(--white);
+                                                              background-color:var(--main-color);}
+
+#services-section .section-container .card-box .info::after {content:"";
+                                                             position:absolute;
+                                                             top:0;
+                                                             left:4.2rem;
+                                                             width:4rem;
+                                                             height:100%;
+                                                             transform:skewX(-30deg);
+                                                             background-color:var(--gray-color8);}
+
+#services-section .section-container .card-box .info .btn {font-size:1.1rem;
+                                                           margin:0;
+                                                           color:var(--main-color);}
