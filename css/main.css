@@ -1230,3 +1230,42 @@ section {padding:3rem 1rem;}
                                                           font-weight:bold;
                                                           color:var(--gray-color3);
                                                           background-color:var(--white);}
+
+/******************
+ # Statistics
+*******************/
+#statistics-section {padding:3rem 0 0;}
+
+#statistics-section .section-container {width:100%;
+                                        background:linear-gradient(var(--light-blue3), var(--light-blue2)), url(../img/education\ \(3\).jpg);
+                                        background-repeat:no-repeat;
+                                        background-blend-mode:multiply;
+                                        background-attachment:fixed;
+                                        background-position:center;
+                                        background-size:cover;
+                                        min-height:30rem;}
+
+#statistics-section .section-container .section-holder {width:80%;
+                                                        padding:0;
+                                                        text-align:center;
+                                                        display:grid;
+                                                        gap:3.2rem;
+                                                        grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));}
+
+#statistics-section .section-container .card-box {padding:0.5rem;
+                                                  text-align:center;
+                                                  color:var(--black);
+                                                  background-color:var(--white);
+                                                  opacity:0.8;}
+
+#statistics-section .section-container .card-box::before,
+#statistics-section .section-container .card-box::after {content:"";
+                                                         position:absolute;}
+
+#statistics-section .section-container .card-box span.count-num {display:block;
+                                                                 font-size:2rem;
+                                                                 font-weight:bold;
+                                                                 margin:0.5rem 0;}
+
+#statistics-section .section-container .card-box span.name {font-size:1.1rem;
+                                                            font-weight:bold;}
