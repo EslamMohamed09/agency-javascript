@@ -1350,3 +1350,95 @@ section {padding:3rem 1rem;}
 
       50%  {background-image:url(../img/game3.jpg);}
 }
+
+/******************
+ # Footer
+*******************/
+footer {padding:4rem 0 0;
+        background-color:var(--black2);}
+
+footer .section-container {padding-bottom:2rem;
+                           display:grid;
+                           gap:3.2rem;
+                           grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));}
+
+footer .section-container .footer-block h3 {color:var(--white);
+                                            font-size:2rem;
+                                            margin:0 0 1rem;}
+
+footer .section-container .footer-block p {color:var(--gray-color7);}
+
+footer .section-container .footer-block .social {display:flex;
+                                                 gap:1rem;
+                                                 margin-bottom:1.5rem;}
+
+footer .section-container .footer-block .social li {display:inline-block;}
+
+footer .section-container .footer-block .social li a {display:inline-flex;
+                                                      justify-content:center;
+                                                      align-items:center;
+                                                      text-align:center;
+                                                      font-size:1.4rem;
+                                                      width:2.5rem;
+                                                      height:2.5rem;
+                                                      color:var(--gray-color7);
+                                                      background-color:var(--gray-color3);}
+
+footer .section-container .footer-block .social li .facebook:hover {color:#fff;
+                                                                    background-color:#1877f2;}
+
+footer .section-container .footer-block .social li .twitter:hover {color:#fff;
+                                                                   background-color:#1da1f2;}
+
+footer .section-container .footer-block .social li .youtube:hover {color:#fff;
+                                                                    background-color:#ff0000;}
+
+footer .section-container .footer-block .links li {padding:1rem 0;
+                                                   transition:var(--main-transition);}
+
+footer .section-container .footer-block .links li a {font-size:1.2rem;
+                                                     color:var(--light-blue);
+                                                     transition:var(--main-transition);}
+
+footer .section-container .footer-block .links li:not(:last-child) {border-bottom:1px solid var(--gray-color4);}
+
+footer .section-container .footer-block .links li:hover {padding-left:0.4rem;}
+
+footer .section-container .footer-block .links li:hover a {color:var(--white);}
+
+footer .section-container .footer-block .links li a::before {font-family:"Font Awesome 5 Free";
+                                                             content:"\F101";
+                                                             font-weight:900;
+                                                             margin-right:1rem;
+                                                             color:var(--light-blue);}
+
+footer .section-container .footer-block .line {display:flex;
+                                               flex-direction:row;
+                                               justify-content:flex-start;
+                                               align-items:flex-start;
+                                               gap:0.4rem;
+                                               color:var(--gray-color6);
+                                               margin-bottom:1.2rem;}
+
+footer .section-container .footer-block .line p,
+footer .section-container .footer-block .line span {margin:0;
+                                                    font-size:1.2rem;}
+
+footer .section-container .footer-block .line #icon {font-size:1.4rem;
+                                                     margin:0;
+                                                     margin-right:0.1rem;
+                                                     color:var(--light-blue);}
+
+footer .section-container .footer-block img {width:5rem;
+                                             height:5rem;
+                                             margin-bottom:0.3rem;
+                                             margin-right:0.3rem;
+                                             object-fit:cover;
+                                             border:0.3rem solid var(--gray-color9);}
+
+footer .copywrite {font-size:1.2rem;
+                   font-weight:bold;
+                   text-align:center;
+                   padding:1rem;
+                   color:var(--gray-color8);
+                   background-color:var(--black);}
